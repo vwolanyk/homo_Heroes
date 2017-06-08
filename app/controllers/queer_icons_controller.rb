@@ -7,6 +7,10 @@ def index
 
 end
 
+def homo
+
+end
+
 
 
 end
