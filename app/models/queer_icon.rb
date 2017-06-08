@@ -1,0 +1,2 @@
+class QueerIcon < ApplicationRecord
+end
