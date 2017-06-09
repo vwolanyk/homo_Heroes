@@ -3,7 +3,7 @@
 <div class="polaroid">
 
   <p><%= icon.name%></p>
-  <img src="<%= icon.img_url %>" />
+  <%= link_to(image_tag(icon.img_url), "/queer_icons/#{icon.id}") %>
 
 
 </div>
