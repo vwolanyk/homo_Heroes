@@ -1,1 +1,10 @@
 <h1>BIG HOMOS</h1>
+<% @icons.each do |icon| %>
+<div class="polaroid">
+
+  <p><%= icon.name%></p>
+  <img src="<%= icon.img_url %>" />
+
+
+</div>
+  <%end%>

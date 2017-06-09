@@ -4,6 +4,7 @@ class QueerIconsController < ApplicationController
 
 def index
 
+@icons = QueerIcon.all
 
 end
 
