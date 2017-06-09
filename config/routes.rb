@@ -5,5 +5,5 @@ root 'queer_icons#homo'
 
 get 'queer_icons' => 'queer_icons#index'
 
-
+get 'queer_icons/:id' => 'queer_icons#show'
 end
