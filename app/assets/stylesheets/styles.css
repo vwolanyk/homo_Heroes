@@ -72,3 +72,9 @@ main {max-width: 95%;
 }
 
 .ditto { background-color: purple;}
+
+#error_explanation {
+  padding: 2px;
+  color: red;
+
+}

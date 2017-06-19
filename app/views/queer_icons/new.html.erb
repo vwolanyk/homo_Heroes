@@ -1,7 +1,21 @@
 <h1>Add to the Iconography</h1>
 <%= link_to "Homo", queer_icons_path %>
 
+
 <%=form_for(@icon) do |f| %>
+
+  <% if @icon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@icon.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+      <ul>
+      <% @icon.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
 
 <p>
   <%= f.label :name %><br>
