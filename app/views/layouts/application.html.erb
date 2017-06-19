@@ -9,6 +9,13 @@
   </head>
 
   <body>
+    <% if current_user %>
+      <p>
+        Hello <%= current_user.email %>!
+        |
+        <%= link_to 'Logout', session_path(current_user.id), method: :delete %>
+      </p>
+      <% end %>
     <%= yield %>
   </body>
 </html>
