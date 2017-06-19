@@ -5,5 +5,11 @@ root 'queer_icons#homo'
 
 get 'queer_icons' => 'queer_icons#index'
 
+post 'queer_icons' => 'queer_icons#create'
+
+get 'queer_icons/new' => 'queer_icons#new'
+
 get 'queer_icons/:id' => 'queer_icons#show'
+
+
 end
